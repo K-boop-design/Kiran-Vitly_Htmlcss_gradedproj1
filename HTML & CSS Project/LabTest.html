@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="LabTest.css">
+</head>
+<body>
+
+    <section id="block">
+      <form action="" id="lab-form">
+        <img src="Lab-Test\lab-test.jpg" alt="image"/>
+        <h2>1.Contact Details</h2>
+        <input type="text" title="Patients_Name" placeholder="Full Name" required/>
+        <input type="number" title="patient_id" placeholder="Patient Id if Exists" required/>
+        <input type="number" title="Contact_no" placeholder="Contact no" required/>
+        <input type="email" title="email_id" placeholder="Email" required>
+        <h2>2.Address Details</h2>
+        <input type="text" title="House_No" placeholder="House_No" required/>
+        <input type="text" title="Street" placeholder="Street" required/>
+        <input type="text" title="Area" placeholder="Area" required/>
+        <h4>District</h4>
+        <select name="District" id="district" required>
+            <option value="">choose</option>
+            <option value="BangloreUrban">Banglore Urban</option>
+            <option value="BangloreRural">Banglore Rural</option>
+            <option value="Doddaballapur">Doddaballapur</option>
+        </select>
+        <h2>Choose the Test Type</h2>
+        <p>Check atleast one CheckBox</p>
+        <input type="checkbox" id="c1" name="option1" value="CBC"><label for="c1">CBC</label>
+        <input type="checkbox" id="c2" name="option2" value="WBC"><label for="c2">CBC</label>
+        <input type="checkbox" id="c3" name="option3" value="RBC"><label for="c3">CBC</label>
+        <input type="checkbox" id="c4" name="option4" value="Sugar"><label for="c4">CBC</label>
+
+        <h2>4 Do You Want Hard Copy of the Report</h2>
+        <input type="radio" id="c5" name="option" value="true" required><label for="c5">Yes</label>
+        <input type="radio" id="c6" name="option" value="false" required><label for="c6">No</label>
+
+        <h2>5.Select Your Convenient Date and Time</h2>
+        <input type="date" name="date" required>
+        <br>
+        <input type="time" name="time1" required>
+
+      </form>
+      <button form="lab-form">Reset</button>
+      <button form="lab-form">Submit</button>
+    </section>
+
+    
+   
+</body>
+</html>
